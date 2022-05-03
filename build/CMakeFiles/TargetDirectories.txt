@@ -1,0 +1,3 @@
+/Users/cephasn/cpp_programming/book-management-system/build/CMakeFiles/BookManagementSystem.dir
+/Users/cephasn/cpp_programming/book-management-system/build/CMakeFiles/edit_cache.dir
+/Users/cephasn/cpp_programming/book-management-system/build/CMakeFiles/rebuild_cache.dir

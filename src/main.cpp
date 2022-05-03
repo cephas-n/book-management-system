@@ -1,11 +1,8 @@
-#include "test.h"
 #include <iostream>
 #include <string>
 #include <mysqlx/xdevapi.h>
 
-int main () {
-	
-	run_test();
-
+int main (int argc, char *argv []) {
+	std::cout << "Project configured successfully!" << std::endl;
 	return 0;
 }

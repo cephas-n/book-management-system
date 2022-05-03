@@ -30,7 +30,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 #CUSTOM: define project name and version
-PROJECT(MY_PROJECT_NAME VERSION 1.0)
+PROJECT(BookManagementSystem VERSION 1.0)
 
 #CUSTOM: set path to openssl on my local machine (cephasn macOS)
 #Set to 'builtin' if connector was built with built-in SSL support
@@ -421,8 +421,8 @@ endif()
 # Targets to build test applications.
 #
 
-add_executable(MY_PROJECT_NAME ./src/main.cpp)
-target_link_libraries(MY_PROJECT_NAME MySQL::conncpp)
+add_executable(BookManagementSystem ./src/main.cpp)
+target_link_libraries(BookManagementSystem MySQL::conncpp)
 
 
 
@@ -447,7 +447,7 @@ target_link_libraries(MY_PROJECT_NAME MySQL::conncpp)
 #
 
 #set_property(TARGET devapi_test xapi_test PROPERTY BUILD_WITH_INSTALL_RPATH ON)
-set_property(TARGET MY_PROJECT_NAME PROPERTY BUILD_WITH_INSTALL_RPATH ON)
+set_property(TARGET BookManagementSystem PROPERTY BUILD_WITH_INSTALL_RPATH ON)
 #message("Target property: ${TARGET}")
 
 set(rpath)
@@ -461,7 +461,7 @@ if(rpath)
   #set_property(TARGET devapi_test xapi_test
   #  APPEND PROPERTY INSTALL_RPATH "${rpath}"
   #)
-  set_property(TARGET MY_PROJECT_NAME
+  set_property(TARGET BookManagementSystem
     APPEND PROPERTY INSTALL_RPATH "${rpath}"
   )
 endif()
@@ -510,4 +510,4 @@ endif()
 
 
 #additional include paths
-target_include_directories(MY_PROJECT_NAME PUBLIC ${EXTRA_INCLUDES})
+target_include_directories(BookManagementSystem PUBLIC ${EXTRA_INCLUDES})
